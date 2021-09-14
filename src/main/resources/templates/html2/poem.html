@@ -1,4 +1,5 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <title> стихотворения
     </title>
@@ -25,5 +26,8 @@
     <IMG SRC="/images/105677333_large_4737188_Bez_imeni2.jpg"> <br>
     <a href = "#up"> наверх </a>
 </font>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
 </body>
 </html>
